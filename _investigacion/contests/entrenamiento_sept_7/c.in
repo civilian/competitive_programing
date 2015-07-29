@@ -1,0 +1,21 @@
+2
+5 6
+0,1,2,Smith Street
+0,2,5,Campus Blvd.
+0,3,7,Main St.
+1,4,12,Brown Avenue
+2,4,4,Oakberry Circle
+3,4,6,Division Ave.
+9 12
+0,1,1,Campus Drive
+1,2,2,Campus Drive
+0,3,3,University Blvd.
+1,4,4,Main Street
+2,5,5,MLK Blvd.
+3,4,6,Gemini Dr.
+4,5,7,Gemini Dr.
+3,6,8,University Blvd.
+4,7,9,Main Street
+5,8,10,MLK Blvd.
+6,7,11,Mills Ave.
+7,8,12,Mills Ave.

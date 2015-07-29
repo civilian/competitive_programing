@@ -1,0 +1,9 @@
+77429315 is not the sum of two primes!.
+11 is not the sum of two primes!.
+12 is the sum of 5 and 7.
+30971726 is not the sum of two primes!.
+100000000 is not the sum of two primes!.
+179424673 is not the sum of two primes!.
+245675234 is not the sum of two primes!.
+358849346 is not the sum of two primes!.
+15485863 is not the sum of two primes!.

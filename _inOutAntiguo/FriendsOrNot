@@ -1,0 +1,32 @@
+6 1
+vasya petya 2
+petya vasya 3
+petya vasya 3
+vasya petya 4
+ivan anya 4
+anya ivan 5
+
+6 1
+vasya petya 1
+vasya petya 2
+petya vasya 3
+vasya petya 1
+vasya petya 2
+petya vasya 3
+petya vasya 4
+petya vasya 5
+anya ivan 2
+ivan anya 4
+
+1000 1000
+a b 0
+
+
+
+1 1000
+a b 0
+4 1
+vasya petya 1
+petya vasya 2
+anya ivan 2
+ivan anya 4

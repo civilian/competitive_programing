@@ -1,0 +1,211 @@
+3
+a
+b
+c
+4
+a b
+b c
+a b
+b c
+
+10
+B
+C
+D
+E
+F
+G
+H
+I
+J
+K
+18
+J G
+B F
+I C
+D I
+K E
+F J
+H F
+D C
+K B
+E I
+D E
+C G
+I B
+H D
+K E
+F G
+H B
+D J
+
+3
+vodka
+wine
+beer
+3
+wine vodka
+wine vodka
+beer wine
+
+3
+a
+b
+c
+1
+a c
+
+10
+A
+B
+C
+D
+E
+F
+G
+H
+I
+J
+3
+I E
+E A
+J B
+
+8
+a
+b
+c
+d
+e
+f
+s
+t
+6
+a e
+a b
+c d
+e f
+s t
+a t
+
+8
+s
+a
+b
+e
+f
+c
+d
+t
+6
+a e
+a b
+c d
+e f
+s t
+a t
+
+8
+a
+b
+c
+s
+t
+e
+f
+d
+6
+a b
+a e
+c d
+e f
+s t
+a t
+
+5
+A
+B
+C
+D
+E
+5
+C A
+D A
+B D
+E B
+E C
+
+3
+a
+b
+c
+1
+c a
+
+5
+wine
+beer
+rum
+apple-juice
+cachaca
+1
+wine cachaca
+
+1
+vodka
+0
+
+3
+vodka
+wine
+beer
+3
+wine vodka
+beer wine
+vodka beer
+
+3
+vodka
+wine
+beer
+2
+wine vodka
+beer wine
+
+5
+wine
+beer
+rum
+apple-juice
+cachaca
+6
+beer cachaca
+apple-juice beer
+apple-juice rum
+beer rum
+beer wine
+wine cachaca
+
+10
+cachaca
+rum
+apple-juice
+tequila
+whiskey
+wine
+vodka
+beer
+martini
+gin
+11
+beer whiskey
+apple-juice gin
+rum cachaca
+vodka tequila
+apple-juice martini
+rum gin
+wine whiskey
+apple-juice beer
+beer rum
+wine vodka
+beer tequila

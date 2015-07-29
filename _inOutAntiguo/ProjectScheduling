@@ -1,0 +1,22 @@
+3
+
+A 5
+B 3 A D
+D 2 A
+C 2 B
+F 2 CE
+E 4 DC
+             
+A 5
+B 3 A
+D 2 A
+C 2 B
+F 2 CE
+E 4 DC
+
+Z 5
+B 3 Z D
+D 2 Z
+C 2 B
+F 2 CE
+E 4 DC

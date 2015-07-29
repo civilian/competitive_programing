@@ -1,0 +1,205 @@
+Libro
+
+Maraton Book
+
+-si no es exponencial se manda, por experiencia se dice q si toma mas de 10 seg es exponencial y no se manda.
+-tener en cuenta el limite de algo iterando sobre un millon o algo iterando sobre la mitad de 10^5//La tablita de este man.
+-partir las llamadas a funciones es mejor asi porque desde el debugger se hace mas facil saber cual fue la salida de la funcion.
+Lprac-utilizar temps, y if else completos para simplificar codigo, y poder ver en el debug.
+-naming
+   :leer lo de hungarian y lo de poner los tipos de las variables junto con los nombres.
+   :usar iI,iK,iM en ves de i j k  por los copy paste.
+
+
+-complejidad, son n! permutacion y 2^n combinaciones, para un n^3 la entrada es como 39 de n es suficiente nlog n, toca ver con los nuevos problemas.
+-las entradas de sampel son muy triviales, por lo que las pruebas con estos no son suficientes. 
+
+LpracPRUEBAS
+
+
+1. Must include sample input, the most trivial one, you even have the answer given. 
+Lprac2. Must include boundary cases, what is the maximum n,x,y, or other input variables, try 
+varying their values to test for out of bound errors. 
+ 3. For multiple input test case, try using two identical test case consecutively. Both must 
+output the same result. This is to check whether you forgot to initialize some variables, 
+which will be easily identified if the first instance produce correct output but the second 
+ one doesn't. 
+4. Increase the size of input. Sometimes your program works for small input size, but 
+behave wrongly when input size increases.  
+5. Tricky test cases, analyze the problem description and identify parts that are tricky, test 
+ them to your code. 
+6. Don't assume input will always nicely formatted if the problem description didn't say  
+so. Try inserting white spaces (space, tabs) in your input, check whether your code is able 
+ to read in the values correctly 
+7. Finally, do random test cases, try random input and check your code's correctness. 
+
+PLAN DE ATAQUE
+
+1. Order the problems: shortest job first, in terms of your effort (shortest to longest: 
+ done it before, easy, unfamiliar, hard). 
+2. Sketch the algorithms, complexity, the numbers, data structures, tricky details. 
+3. Brainstorm other possible algorithms (if any) - then pick the stupidest that works! 
+ 4. Do the Math! (space & time complexity & plug-in actual expected & worst case 
+numbers). 
+5. Code it of course, as fast as possible, and it must be correct. 
+6. Try to break the algorithm - use special (degenerate?) test cases. 
+
+
+CODING 
+ Only coding after you finalize your algorithm. 
+2. Create test data for tricky cases. 
+3. Code the input routine and test it (write extra output routines to show data). 
+4. Code the output routine and test it. 
+ 5. Write data structures needed. 
+6. Stepwise refinement: write comments outlining the program logic. 
+7. Fill in code and debug one section at a time. 
+8. Get it working & verify correctness (use trivial test cases). 
+ 9. Try to break the code - use special cases for code correctness. 
+
+LpracTRICKS
+
+Lprac3. Hint: focus on limits (specified in problem statement). 
+Lprac4. Waste memory when it makes your life easier (trade memory space for speed). 
+Lprac 5. Don't delete your extra debugging output, comment it out. 
+Lprac6. Optimize progressively, and only as much as needed. 
+Lprac7. Keep all working versions! 
+Lprac8. Code to debug: 
+Lpraca. white space is good, 
+Lpracb. use meaningful variable names, //gregorian
+Lprac c. don't reuse variables, (we are not doing software engineering here) 
+Lpracd. stepwise refinement, 
+Lprace. Comment before code. 
+Lprac9. Avoid pointers if you can. 
+Lprac10. Avoid dynamic memory like the plague: statically allocate everything. (yeah 
+ yeah) 
+Lprac11. Try not to use floating point; if you have to, put tolerances in everywhere (never 
+test equality) 
+Lprac12. Comments on comments: 
+Lpraca. Not long prose, just brief notes. 
+Lpracb. Explain high-level functionality: ++i; /* increase the value of i by */ is 
+ worse than useless. 
+Lpracc. Explain code trickery. 
+Lpracd. Delimit & document functional sections
+
+Lpracestructuras de datos
+
+LpracWill it work?
+Lpractener en cuenta las preguntas q se le van a hacer a las estructuras, y o agregar mas info o cambiar
+
+LpracCan I code it? 
+Lpracme acuerdo?, cabe en la memoria todo?
+
+LpracCan I code it in time? or has my programming language support it yet?
+
+LpracCan I debug it? 
+Lpracel estado, la impresion de arboles y de listas.
+
+Lprac it is fast?
+Lpracalgunos reducen la complejidad de un algoritmo
+
+LpracEVITAR
+Lprac-ponerle cuidado a los null pointer
+Lprac-coolnes
+
+LpracTIPOS DE DATOS
+
+Lpracarray: insertar ordenado es lento, borrar tambien, lo de aumentar el tamaño.
+
+Lpraclinked list: insertar ordenado tiene que buscar desde el principio, es como un array solo que su insersion es mas rapida y borrado tambien.
+
+Lpracstack(pila):
+Lprac--1. To model "real stack" in computer world: Recursion, Procedure Calling, etc. 
+Lprac2. Checking palindrome (although checking palindrome using Queue & Stack is 'stupid'). 
+Lprac3. To read an input from keyboard in text editing with backspace key.  
+Lprac 4. To reverse input data, (another stupid idea to use stack for reversing data). 
+Lprac5. Checking balanced parentheses. 
+Lprac6. Postfix calculation. 
+Lprac7. Converting mathematical expressions. Prefix, Infix, or Postfix.
+
+LpracQueue(cola):
+
+LpracINPUT
+Lpracmanejar perfectamente la lectura de entradas: practicar y desmenbrar scanner//ya no ahora es bufferreader.
+
+Lpractener en cuenta las inicializaciones, y los espacios en blanco y todo eso.
+
+LpracBRUTE FORCE METHOD
+
+Lpracdebe ser el primero en considerar, es "facil" de codificar y si da para el tiempo debe ser utilizado.
+
+LpracRECURSION
+
+Lpracmas facil de conceptualizar, o son mas rapidas.
+
+LpracExamples: Tower of Hanoi, Searching (DFS, BFS), etc. 
+
+LpracUno primero mira como resolver el caso base luego asume solucion para n-1 y busca como llevar el caso a el n-1, 
+
+Lprac1. How can you define the problem in term of a smaller problem of the same type? 
+Lprac2. How does each recursive call diminish the size of the problem? 
+Lprac 3. What instance of the problem can serve as the base case? 
+Lprac4. As the problem size diminishes, will you reach this base case? 
+
+LpracDivide and Conquer 
+Lprac1. Divide data into parts 
+Lprac2. Find sub-solutions for each of the parts recursively (usually) 
+Lprac 3. Construct the final answer for the original problem from the sub-solutions 
+
+
+LpracGenerating vs Filtering
+
+Lpracfiltters easy to code, genrator dificult, hay q hacer la matematica, si no puede filters, hago un gerardor
+Lprac filters=muchas posibles soluciones escogo una.
+
+LpracPre-Computation / Pre-Calculation 
+
+Lpraca veces es mejor generar una lista larga de numeros primos, para usarlos en todo el programa.
+
+LpracSymetrias
+Lpraccosas como distancias,
+
+Lpracforward vs backward 
+Lpracmas rapido a veces
+
+CHAPTER 7    MATHEMATICS 
+
+Base Number Conversion */
+
+Big Mod (b^p)%m */
+
+Big Integer, solo usar BigInteger y acordarse de igualar. */-
+
+Carmichael Number
+>=3 factores primos 561,1105,1729,2465,2821,6601,8911,10585,15841,29341,41041,46657,52633,62745,63973 mirar eso, //al parecer con 4 no funciona,->ya esta solucionado habia que probar la formula hacia abajo todo el camino
+
+
+
+************************************
+pag. Aparte
+
+Falta los tipos de datos y cuanto guardan.
+
+****************************************
+al final de todo cuando este bn
+
+CONTINGENCIA
+
+ How long have you spent debugging it already?  
+2. What type of bug do you seem to have?  
+3. Is your algorithm wrong?  
+ 4. Do you data structures need to be changed?  
+5. Do you have any clue about what's going wrong?  
+6. A short amount (20 mins) of debugging is better than switching to anything else; 
+but you might be able to solve another from scratch in 45 mins.  
+ 7. When do you go back to a problem you've abandoned previously?  
+8. When do you spend more time optimizing a program, and when do you switch?  
+9. Consider from here out - forget prior effort, focus on the future: how can you get the most points in the next hour with what you have? 
+
+-tomar tiempo de debug.
+-20 min de debug es mejor que cualquier cosa, pero en 45 se puede hacer otro.
+-se cual es mi bug?, esta mi algoritmo bn?, 
+-10 minutos sin pistas.
+-si no esta bn y hay otro cortico hacerle
+-cuando miro uno que ya habia abandonado?
+-es la mayor cantidad de puntos de ahi en adelante no el esfuerzo
+

@@ -1,0 +1,4 @@
+Case 1: a+b
+Case 2: alpha^2+2*alpha*omega+omega^2
+Case 3: acm^3+3*acm^2*icpc+3*acm*icpc^2+icpc^3
+Case 4: zzzz^10+10*zzzz^9*icpcz+45*zzzz^8*icpcz^2+120*zzzz^7*icpcz^3+210*zzzz^6*icpcz^4+252*zzzz^5*icpcz^5+210*zzzz^4*icpcz^6+120*zzzz^3*icpcz^7+45*zzzz^2*icpcz^8+10*zzzz*icpcz^9+icpcz^10

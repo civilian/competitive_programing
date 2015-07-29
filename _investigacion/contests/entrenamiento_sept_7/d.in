@@ -1,0 +1,41 @@
+2
+
+3
+
+stairs
+
+talking
+
+staring
+
+4 5
+
+0 3 talking
+
+0 1 abc
+
+0 2 xyz
+
+1 3 stairs
+
+2 3 staring
+
+3
+
+fire
+
+water
+
+people
+
+4 5
+
+0 1 abc
+
+0 2 water
+
+1 2 fire
+
+1 3 xyz
+
+2 3 abc
