@@ -162,7 +162,7 @@ class bitManipulation {
 			BigInteger b = BigInteger.ZERO;// Biginteger usa la misma memoria
 											// pero hace new de un arreglo cada
 											// vez que hay setBit.
-			a = new Bits(1429999999);//maximo tamaño de pila
+			a = new Bits(1429999999);//maximo tamanno de pila
 			a.setBit(224);
 			a.setBit(63);
 
@@ -196,7 +196,7 @@ class bitManipulation {
 }
 
 /*
- * A lo maximo hay un desperdicio de 64 bits si me paso de el tamaño maximo que
+ * A lo maximo hay un desperdicio de 64 bits si me paso de el tamanno maximo que
  * siempre tiene un poquito mas sale una excepcion, lo unico es que si hay que
  * tener en cuenta que es mas grande de lo que se necesita
  */
