@@ -12,3 +12,9 @@ public class isogram {
         return true;
     } 
 }
+
+public class isogramBest {
+  public static boolean  isIsogram(String str) {
+    return str.length() == str.toLowerCase().chars().distinct().count();
+  } 
+}
