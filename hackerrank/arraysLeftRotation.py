@@ -7,11 +7,8 @@ import re
 import sys
 
 # Complete the rotLeft function below.
-def rotLeft(a, d, n):
-    b = [0] * n
-    for i in range(n):
-        b[(i-d) % n ] = a[i]
-    return b
+def rotLeft(a, d):
+    return a[(d % n):] + a[:(d % n)]
 
 if __name__ == '__main__':
     fptr = open(os.environ['OUTPUT_PATH'], 'w')
@@ -24,7 +21,7 @@ if __name__ == '__main__':
 
     a = list(map(int, input().rstrip().split()))
 
-    result = rotLeft(a, d, n)
+    result = rotLeft(a, d)
 
     fptr.write(' '.join(map(str, result)))
     fptr.write('\n')
