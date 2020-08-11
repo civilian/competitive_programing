@@ -6,30 +6,28 @@ import random
 import re
 import sys
 import pprint
+from collections import Counter
 
-def LCSubStr(X, Y, m, n):
+primes = [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97, 101, 103, 107, 109, 113, 127, 131, 137, 139, 149, 151, 157, 163, 167, 173, 179, 181, 191, 193, 197, 199]
 
-    LCSuff = [[0 for k in range(n+1)] for l in range(m+1)] 
-    result = 0
-    for i in range(m + 1): 
-        for j in range(i + 1): 
-            if (i == 0 or j == 0): 
-                LCSuff[i][j] = 0
-            elif (X[i-1] == Y[j-1]): 
-                LCSuff[i][j] = LCSuff[i-1][j-1] + 1
-            else: 
-                LCSuff[i][j] = 0
-    pp = pprint.PrettyPrinter(indent=2)
-    pp.pprint(LCSuff)
-    
-    for i in range(m + 1): 
-        for j in range(i, n + 1):
-            result += LCSuff[i][j]
-    return result 
-
-# Complete the sherlockAndAnagrams function below.
 def sherlockAndAnagrams(s):
-    return LCSubStr(s,s[::-1], len(s), len(s))
+    identifiers = Counter()
+    anagrams = 0
+    for i in range(len(s)):
+        for j in range(i + 1, len(s) + 1):
+            multiplication = 1
+            for k in range(i, j):
+                index = ord(s[k]) - ord('a')
+                identifier = primes[index]
+                multiplication *= identifier
+            if multiplication in identifiers:
+                anagrams += identifiers[multiplication]
+                identifiers.update({multiplication: 1})
+            else:
+                identifiers.update({multiplication: 1})
+    return anagrams
+
+    
 
 if __name__ == '__main__':
     fptr = open(os.environ['OUTPUT_PATH'], 'w')
