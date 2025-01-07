@@ -19,15 +19,16 @@ def descargar_video():
     ydl_opts = {
         'format': 'bestvideo+bestaudio/best',         # Mejor calidad de video y audio
         'outtmpl': f'{output_dir}/%(title)s.%(ext)s', # Directorio y nombre del archivo
-        'merge_output_format': 'mp4'                  # Formato final en MP4
+        'merge_output_format': 'mp4',                # Formato final en MP4
+        'ignoreerrors': True                         # Ignorar errores durante la descarga
     }
 
     try:
         with yt_dlp.YoutubeDL(ydl_opts) as ydl:
             ydl.download([url])
-        messagebox.showinfo("Descarga completa", "El video se ha descargado con éxito.")
+        messagebox.showinfo("Descarga completa", "El video se ha descargado con éxito o se han ignorado errores.")
     except Exception as e:
-        messagebox.showerror("Error de descarga", str(e))
+        messagebox.showerror("Error de descarga", f"Se encontraron errores, pero se continuó: {str(e)}")
 
 # Crear la ventana principal
 root = tk.Tk()
@@ -44,3 +45,4 @@ tk.Button(root, text="Descargar Video", command=descargar_video).pack(pady=20)
 
 root.mainloop()
 
+´+¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿
