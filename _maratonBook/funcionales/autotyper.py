@@ -9,6 +9,7 @@ def start_autotyper():
         # Obtener valores de los campos de entrada
         texto = texto_entry.get()
         intervalo = float(intervalo_entry.get()) if intervalo_entry.get() else 0
+        intervalo = 0.01
         tiempo_espera = float(tiempo_espera_entry.get()) if tiempo_espera_entry.get() else 3
         repeticiones = int(repeticiones_entry.get()) if repeticiones_entry.get() else 1
 
@@ -42,7 +43,7 @@ texto_entry.grid(row=0, column=1, padx=10, pady=5)
 
 tk.Label(root, text="Intervalo entre teclas (segundos, predeterminado 0):").grid(row=1, column=0, padx=10, pady=5)
 intervalo_entry = tk.Entry(root, width=10)
-intervalo_entry.insert(0, "0")  # Valor predeterminado de intervalo
+intervalo_entry.insert(0, "0.05")  # Valor predeterminado de intervalo
 
 tk.Label(root, text="Tiempo de espera antes de comenzar (segundos, predeterminado 3):").grid(row=2, column=0, padx=10,
                                                                                              pady=5)
