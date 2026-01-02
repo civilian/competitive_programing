@@ -1,0 +1,6 @@
+yt_dlp
+pyautogui
+openai-whisper
+ffmpeg-python
+requests
+beautifulsoup4

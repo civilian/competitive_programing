@@ -1,0 +1,24 @@
+{
+	"folders": [
+		{
+			"name": "📚 Maraton Book",
+			"path": "_maratonBook"
+		},
+		{
+			"name": "🐍 Python Book",
+			"path": "_pythonMaratonBook"
+		},
+		{
+			"name": "🔧 General",
+			"path": "general"
+		}
+	],
+	"settings": {
+		"files.exclude": {
+			"**/*.class": true,
+			"**/*.pyc": true,
+			"**/__pycache__": true
+		}
+	}
+}
+

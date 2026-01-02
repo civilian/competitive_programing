@@ -1,0 +1,23 @@
+# Ignorar ABSOLUTAMENTE TODO
+*
+
+# Excepto estos archivos/carpetas esenciales:
+!.cursorignore
+!.gitignore
+!README.md
+!Makefile
+!requirements.txt
+
+# Tu proyecto principal
+!_maratonBook/
+!_maratonBook/**
+
+# Python book
+!_pythonMaratonBook/
+!_pythonMaratonBook/**
+
+# Utilidades
+!general/
+!general/**
+!utils/
+!utils/**

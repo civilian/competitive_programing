@@ -81,6 +81,8 @@ Desktop.ini
 .env.local
 .env.*.local
 *.env
+*/.env
+
 
 # Spider state files (auto-generated)
 spider_state_*.json
