@@ -4,3 +4,9 @@ openai-whisper
 ffmpeg-python
 requests
 beautifulsoup4
+moviepy
+playwright
+google-api-python-client
+google-auth-httplib2
+google-auth-oauthlib
+openai

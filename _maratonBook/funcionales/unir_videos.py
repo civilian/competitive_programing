@@ -1,6 +1,6 @@
 import os
 from tkinter import Tk, filedialog, Listbox, Button, END, messagebox
-from moviepy.editor import VideoFileClip, concatenate_videoclips
+from moviepy import VideoFileClip, concatenate_videoclips
 
 
 def unir_videos_en_orden(directorio, archivos_ordenados, salida="video_unido.mp4"):
